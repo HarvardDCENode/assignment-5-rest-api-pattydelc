@@ -1,0 +1,118 @@
+/*  Filename: styles.css
+    Author: Patricia del Campillo */
+
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    margin-left: 20px;
+}
+form > * {
+    margin-bottom: 10px;
+}
+
+.form-button {
+    background-color: rgb(235, 130, 174);
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-button:hover {
+    background-color: rgb(231, 86, 146);
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: rgb(232, 232, 232);
+    color: black;
+    font-weight: 100;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+.back-button:hover {
+    background-color: rgb(177, 176, 176);
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+#updateform-container {
+    width: 60%;
+}
+
+#form-container {
+    width:100%;
+    max-width: 600px;
+    background-color: rgb(251, 251, 251);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.blog-entry-container {
+    background-color: rgb(251, 251, 251);
+    padding: 20px;
+    border-bottom: solid 2px rgb(231, 86, 146);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    gap: 2px;
+}
+
+#form-container > form {
+    margin: 0px;
+}
+
+#blogs-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delete-edit-buttons {
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-end;
+}
+
+#blog-text {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width:100%;
+}
+
+.blog-entry-info {
+    flex-grow: 2;
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: transparent;
+    padding:0px;
+    color: red;
+    text-decoration: underline;
+}
+
+.delete-button:hover {
+    background-color: transparent;
+    padding:0px;
+    color: red;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+

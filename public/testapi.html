@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing the API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body class="vsc-initialized">
+    <div class="container">
+      <h3>Blogs API test</h3>
+      <p>This HTML/JS page tests the Blogs API by listing all; then creating, finding, modifying, and deleting a blog using
+      the REST API. A few notes:
+        <ol>
+          <li>The image is an optional field. However, for testing purposes please upload an image.</li>
+          <li>Select an image to upload, then click the <i>Test API</i> buttton. 
+          <li>See the console for output as the process completes.</li>
+        </ol>
+      </p>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div id="container">
+            <div id="form-container">
+              <form action="/blogs" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label for="image">Add a picture from the trip:</label>
+                  <input id="image" class="form-control" type="file" name="image" />
+                </div>
+                <button class="btn btn-primary" id="testme" type="button">Test the API</button>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="api.js"></script>
+  </body>
+</html>
