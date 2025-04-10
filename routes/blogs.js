@@ -69,7 +69,7 @@ router.post('/blogs/:blogid', (req, res, next)=>{
     BlogService.update(req.params.blogid, data)
         .then((updatedBlog)=>{
             console.log("✅ Blog updated sucessfully");
-            res.redirect('/blogs');  
+            res.redirect('/');  
         })
         .catch((err)=>{
             console.error("❌ Error updating blog:", err);
@@ -81,7 +81,7 @@ router.post('/blogs/:blogid', (req, res, next)=>{
 router.post('/blogs/:blogid/delete', (req, res, next)=>{
     BlogService.delete(req.params.blogid)
         .then((blog)=>{
-            res.redirect('/blogs');
+            res.redirect('/');
             console.log("✅ Blog deleted sucessfully");
         })
         .catch((err)=>{
@@ -124,7 +124,7 @@ router.post('/blogs', upload.single('image'), async (req, res, next) => {
 
     try {
         const savedBlog = await BlogService.create(newBlogData);
-        res.status(201).json(savedBlog);
+        res.redirect('/');
         console.log("✅ REST API: Blog post added successfully");
     } catch (err) {
         console.error("❌ REST API: Error saving blog post:", err);

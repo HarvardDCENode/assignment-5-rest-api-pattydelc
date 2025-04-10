@@ -23,7 +23,7 @@ html
                             div.delete-edit-buttons
                                     a.link-secondary(href='/blogs/'+blog._id) Edit Post
                                     form(action=`/blogs/${blog._id}/delete` method="POST")
-                                        a.link-danger(type=submit) Delete Post
+                                            button(type="submit" class="delete-button") Delete Post
                             h3=`${blog.title}`
                             p=`by ${blog.author}`
                             div#blog-text
